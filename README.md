@@ -1,30 +1,54 @@
 # QA-Chatbot-HuggingFace
-# Question Answering Chatbot with Hugging Face
+# 🤖 Chatbots with Hugging Face
 
-This project demonstrates a simple **question-answering chatbot** using a pretrained Hugging Face transformer model. The bot can answer questions based on a provided context, such as news snippets, Wikipedia text, or Hugging Face blog excerpts.
+This repository contains two chatbot projects built using Hugging Face Transformers. Both demonstrate how to leverage pretrained NLP models for interactive conversational AI.
 
-## Features
-- Uses Hugging Face **transformers** for natural language understanding.
-- Allows users to input a **context paragraph** and ask multiple questions.
-- Outputs accurate answers based on the provided context.
-- Tested with 3–5 example questions per context to ensure reliability.
+---
 
-## Example
+## 1. 📝 Question Answering Chatbot
+A chatbot that answers user questions based on a provided context paragraph (e.g., news snippet, Wikipedia article, or Hugging Face blog excerpt).
 
+### Features
+- Uses a pretrained Hugging Face Question-Answering model.  
+- Accepts custom context text and multiple user questions.  
+- Returns precise answers grounded in the given context.  
+- Verified with 3–5 test questions per context.  
+
+### Example
 **Context:**  
-_"Hugging Face is a company specializing in natural language processing (NLP) models and open-source AI tools."_
+*"Hugging Face is a company specializing in natural language processing (NLP) models and open-source AI tools."*
 
-**Questions and Answers:**  
-1. Q: What does Hugging Face specialize in?  
-   A: Natural language processing (NLP) models and open-source AI tools.
+**Q&A:**  
+- **Q:** What does Hugging Face specialize in?  
+  **A:** Natural language processing (NLP) models and open-source AI tools.  
+- **Q:** Is Hugging Face open-source?  
+  **A:** Yes, it provides open-source AI tools.  
+- **Q:** What kind of company is Hugging Face?  
+  **A:** A company specializing in NLP models and AI tools.  
 
-2. Q: Is Hugging Face open-source?  
-   A: Yes, it provides open-source AI tools.
+---
 
-3. Q: What kind of company is Hugging Face?  
-   A: A company specializing in NLP models and AI tools.
+## 2. 💬 Conversational Chatbot (BlenderBot Small)
+An interactive chatbot built using **Facebook’s BlenderBot Small (90M parameters)**. Runs on CPU, making it lightweight and accessible in Colab.  
 
-## How to Run
-1. Clone this repository:
+### Features
+- Open-domain conversational AI.  
+- Built with Hugging Face `transformers` library.  
+- Deployable in Google Colab with Gradio for interaction.  
+- Demonstrates use of dialogue generation models.  
+
+---
+
+## 🚀 How to Run
+1. Open any notebook in **Google Colab**.  
+2. Install dependencies:
    ```bash
-   git clone https://github.com/your-username/QA-Chatbot-HuggingFace.git
+   pip install transformers gradio
+
+📌 Skills Demonstrated
+
+Hugging Face Transformers (Question Answering + Dialogue models)
+
+Building interactive chatbots
+
+Model deployment in Google Colab
